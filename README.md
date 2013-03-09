@@ -15,8 +15,8 @@ This is a demo application highlighting the Haar Cascade detection implementatio
 
 ### Haar Detection Parameters
 
-- Scale Factor: Parameter specifying how much the image size is reduced at each image scale
-- Minimum Neighbors: Parameter specifying how many neighbors each candidate rectangle should have to retain it
-- Detection Type: If the Canny Pruning option is selected, the detector skips image regions that are unlikely to contain an object, reducing computational overhead and possibly eliminating some false detections
-- Minimum Size: Minimum possible object size. Objects smaller than that are ignored
-- Maximum Size: Maximum possible object size. Objects larger than that are ignored
+- **Scale Factor**: Parameter specifying how much the image size is reduced at each image scale
+- **Minimum Neighbors**: Parameter specifying how many neighbors each candidate rectangle should have to retain it
+- **Detection Type**: If the Canny Pruning option is selected, the detector skips image regions that are unlikely to contain an object, reducing computational overhead and possibly eliminating some false detections
+- **Minimum Size**: Minimum possible object size. Objects smaller than that are ignored
+- **Maximum Size**: Maximum possible object size. Objects larger than that are ignored
