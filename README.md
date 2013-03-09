@@ -2,7 +2,7 @@
 
 This is a demo application highlighting the Haar Cascade detection implementation in Emgu CV using OpenCV. The application provides an interface to change various parameters of the Haar feature detector.
 
-<embed src="https://www.box.com/embed/z9ghgr7s7pxqqpv.swf" width="640" height="480" wmode="opaque" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always">
+![HaarDetection Demo](http://oi48.tinypic.com/11lhpmx.jpg)
 
 ## About Haar-like features
 [Haar-like features](http://en.wikipedia.org/wiki/Haar-like_features) are digital image features used in object recognition. They owe their name to their intuitive similarity with Haar wavelets and were used in the first real-time face detector.
