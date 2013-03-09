@@ -44,7 +44,6 @@
             this.cbxMinimumSize = new System.Windows.Forms.ComboBox();
             this.lblMinimumSize = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.cbxDetectionType = new System.Windows.Forms.ComboBox();
             this.lblDetectionType = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbxMinNeighbors = new System.Windows.Forms.ComboBox();
@@ -58,6 +57,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imgResult = new Emgu.CV.UI.ImageBox();
+            this.ckbDetectionType = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -195,26 +195,17 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.cbxDetectionType);
+            this.panel5.Controls.Add(this.ckbDetectionType);
             this.panel5.Controls.Add(this.lblDetectionType);
             this.panel5.Location = new System.Drawing.Point(6, 187);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(188, 50);
             this.panel5.TabIndex = 5;
             // 
-            // cbxDetectionType
-            // 
-            this.cbxDetectionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxDetectionType.FormattingEnabled = true;
-            this.cbxDetectionType.Location = new System.Drawing.Point(3, 23);
-            this.cbxDetectionType.Name = "cbxDetectionType";
-            this.cbxDetectionType.Size = new System.Drawing.Size(182, 21);
-            this.cbxDetectionType.TabIndex = 3;
-            // 
             // lblDetectionType
             // 
             this.lblDetectionType.AutoSize = true;
-            this.lblDetectionType.Location = new System.Drawing.Point(3, 7);
+            this.lblDetectionType.Location = new System.Drawing.Point(3, 9);
             this.lblDetectionType.Name = "lblDetectionType";
             this.lblDetectionType.Size = new System.Drawing.Size(80, 13);
             this.lblDetectionType.TabIndex = 2;
@@ -329,6 +320,18 @@
             this.imgResult.TabIndex = 2;
             this.imgResult.TabStop = false;
             // 
+            // ckbDetectionType
+            // 
+            this.ckbDetectionType.AutoSize = true;
+            this.ckbDetectionType.Checked = true;
+            this.ckbDetectionType.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckbDetectionType.Location = new System.Drawing.Point(6, 25);
+            this.ckbDetectionType.Name = "ckbDetectionType";
+            this.ckbDetectionType.Size = new System.Drawing.Size(95, 17);
+            this.ckbDetectionType.TabIndex = 3;
+            this.ckbDetectionType.Text = "Canny Pruning";
+            this.ckbDetectionType.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,7 +390,6 @@
         private System.Windows.Forms.ComboBox cbxMinNeighbors;
         private System.Windows.Forms.Label lblMinNeighbors;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox cbxDetectionType;
         private System.Windows.Forms.Label lblDetectionType;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.ComboBox cbxMaximumSize;
@@ -397,6 +399,7 @@
         private System.Windows.Forms.Label lblMinimumSize;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btnDetect;
+        private System.Windows.Forms.CheckBox ckbDetectionType;
     }
 }
 

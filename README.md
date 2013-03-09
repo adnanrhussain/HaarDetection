@@ -2,6 +2,8 @@
 
 This is a demo application highlighting the Haar Cascade detection implementation in Emgu CV using OpenCV. The application provides an interface to change various parameters of the Haar feature detector.
 
+<embed src="https://www.box.com/embed/z9ghgr7s7pxqqpv.swf" width="640" height="480" wmode="opaque" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always">
+
 ## About Haar-like features
 [Haar-like features](http://en.wikipedia.org/wiki/Haar-like_features) are digital image features used in object recognition. They owe their name to their intuitive similarity with Haar wavelets and were used in the first real-time face detector.
 
@@ -10,3 +12,11 @@ This is a demo application highlighting the Haar Cascade detection implementatio
 
 ## About __OpenCV__
 [OpenCV](http://opencv.org/) (Open Source Computer Vision Library) is a library of programming functions mainly aimed at real-time computer vision, developed by Intel, and now supported by Willow Garage and Itseez. It is free for use under the open source BSD license. The library is cross-platform. It focuses mainly on real-time image processing.
+
+### Haar Detection Parameters
+
+	- Scale Factor: Parameter specifying how much the image size is reduced at each image scale
+	- Minimum Neighbors: Parameter specifying how many neighbors each candidate rectangle should have to retain it
+	- Detection Type: If the Canny Pruning option is selected, the detector skips image regions that are unlikely to contain an object, reducing computational overhead and possibly eliminating some false detections
+	- Minimum Size: Minimum possible object size. Objects smaller than that are ignored
+	- Maximum Size: Maximum possible object size. Objects larger than that are ignored

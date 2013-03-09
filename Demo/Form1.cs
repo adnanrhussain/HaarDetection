@@ -28,7 +28,6 @@ namespace Demo
             PopulateCascades();
             PopulateScaleFactors();
             PopulateMinNeighbors();
-            PopulateDetectionTypes();
             PopulateSizes(cbxMinimumSize);
             cbxMinimumSize.SelectedIndex = 1;
             PopulateSizes(cbxMaximumSize);
@@ -83,26 +82,12 @@ namespace Demo
 
         private void PopulateMinNeighbors()
         {
-            cbxMinNeighbors.Items.Add("0");
-            cbxMinNeighbors.Items.Add("5");
-            cbxMinNeighbors.Items.Add("10");
-            cbxMinNeighbors.Items.Add("15");
-            cbxMinNeighbors.Items.Add("20");
-            cbxMinNeighbors.Items.Add("25");
-            cbxMinNeighbors.Items.Add("30");
-
-            cbxMinNeighbors.SelectedIndex = 2;
-        }
-
-        private void PopulateDetectionTypes()
-        {
-            Type detectionType = typeof(HAAR_DETECTION_TYPE);
-            foreach (string property in detectionType.GetEnumNames())
+            for (int i = 0; i <= 10; i++)
             {
-                cbxDetectionType.Items.Add(property);
+                cbxMinNeighbors.Items.Add(i);
             }
 
-            cbxDetectionType.SelectedIndex = 1;
+            cbxMinNeighbors.SelectedIndex = cbxMinNeighbors.Items.Count - 1;
         }
 
         private void PopulateSizes(ComboBox cbx)
@@ -127,7 +112,8 @@ namespace Demo
             string cascade = cbxHaarCascade.SelectedItem.ToString();
             double scaleFactor = Convert.ToDouble(cbxScaleFactor.SelectedItem);
             int minNeighbors = Convert.ToInt32(cbxMinNeighbors.SelectedItem);
-            HAAR_DETECTION_TYPE detectionType = (HAAR_DETECTION_TYPE)Enum.Parse(typeof(HAAR_DETECTION_TYPE), cbxDetectionType.SelectedItem.ToString());
+            HAAR_DETECTION_TYPE detectionType = (ckbDetectionType.Checked) ? HAAR_DETECTION_TYPE.DO_CANNY_PRUNING : HAAR_DETECTION_TYPE.DEFAULT;
+            
             int min = Convert.ToInt32(cbxMinimumSize.SelectedItem);
             int max = Convert.ToInt32(cbxMaximumSize.SelectedItem);
 
