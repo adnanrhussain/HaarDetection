@@ -29,46 +29,47 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnOpenFile = new System.Windows.Forms.Button();
             this.txtFileName = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnDetect = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.cbxMaximumSize = new System.Windows.Forms.ComboBox();
+            this.lblMaximumSize = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.cbxMinimumSize = new System.Windows.Forms.ComboBox();
+            this.lblMinimumSize = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.cbxDetectionType = new System.Windows.Forms.ComboBox();
+            this.lblDetectionType = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.cbxMinNeighbors = new System.Windows.Forms.ComboBox();
+            this.lblMinNeighbors = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cbxScaleFactor = new System.Windows.Forms.ComboBox();
+            this.lblScaleFactor = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbxHaarCascade = new System.Windows.Forms.ComboBox();
             this.lblHaarCascade = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imgResult = new Emgu.CV.UI.ImageBox();
-            this.lblScaleFactor = new System.Windows.Forms.Label();
-            this.cbxScaleFactor = new System.Windows.Forms.ComboBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.cbxMinNeighbors = new System.Windows.Forms.ComboBox();
-            this.lblMinNeighbors = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.cbxDetectionType = new System.Windows.Forms.ComboBox();
-            this.lblDetectionType = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.cbxMinimumSize = new System.Windows.Forms.ComboBox();
-            this.lblMinimumSize = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.cbxMaximumSize = new System.Windows.Forms.ComboBox();
-            this.lblMaximumSize = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnDetect = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgResult)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -120,6 +121,132 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Parameters";
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnDetect);
+            this.panel8.Location = new System.Drawing.Point(6, 426);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(188, 50);
+            this.panel8.TabIndex = 8;
+            // 
+            // btnDetect
+            // 
+            this.btnDetect.Location = new System.Drawing.Point(44, 10);
+            this.btnDetect.Name = "btnDetect";
+            this.btnDetect.Size = new System.Drawing.Size(100, 30);
+            this.btnDetect.TabIndex = 0;
+            this.btnDetect.Text = "Detect";
+            this.btnDetect.UseVisualStyleBackColor = true;
+            this.btnDetect.Click += new System.EventHandler(this.btnDetect_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.cbxMaximumSize);
+            this.panel7.Controls.Add(this.lblMaximumSize);
+            this.panel7.Location = new System.Drawing.Point(6, 299);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(188, 50);
+            this.panel7.TabIndex = 7;
+            // 
+            // cbxMaximumSize
+            // 
+            this.cbxMaximumSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMaximumSize.FormattingEnabled = true;
+            this.cbxMaximumSize.Location = new System.Drawing.Point(3, 23);
+            this.cbxMaximumSize.Name = "cbxMaximumSize";
+            this.cbxMaximumSize.Size = new System.Drawing.Size(182, 21);
+            this.cbxMaximumSize.TabIndex = 3;
+            // 
+            // lblMaximumSize
+            // 
+            this.lblMaximumSize.AutoSize = true;
+            this.lblMaximumSize.Location = new System.Drawing.Point(3, 7);
+            this.lblMaximumSize.Name = "lblMaximumSize";
+            this.lblMaximumSize.Size = new System.Drawing.Size(74, 13);
+            this.lblMaximumSize.TabIndex = 2;
+            this.lblMaximumSize.Text = "Maximum Size";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.cbxMinimumSize);
+            this.panel6.Controls.Add(this.lblMinimumSize);
+            this.panel6.Location = new System.Drawing.Point(6, 243);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(188, 50);
+            this.panel6.TabIndex = 6;
+            // 
+            // cbxMinimumSize
+            // 
+            this.cbxMinimumSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMinimumSize.FormattingEnabled = true;
+            this.cbxMinimumSize.Location = new System.Drawing.Point(3, 23);
+            this.cbxMinimumSize.Name = "cbxMinimumSize";
+            this.cbxMinimumSize.Size = new System.Drawing.Size(182, 21);
+            this.cbxMinimumSize.TabIndex = 3;
+            // 
+            // lblMinimumSize
+            // 
+            this.lblMinimumSize.AutoSize = true;
+            this.lblMinimumSize.Location = new System.Drawing.Point(3, 7);
+            this.lblMinimumSize.Name = "lblMinimumSize";
+            this.lblMinimumSize.Size = new System.Drawing.Size(71, 13);
+            this.lblMinimumSize.TabIndex = 2;
+            this.lblMinimumSize.Text = "Minimum Size";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.cbxDetectionType);
+            this.panel5.Controls.Add(this.lblDetectionType);
+            this.panel5.Location = new System.Drawing.Point(6, 187);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(188, 50);
+            this.panel5.TabIndex = 5;
+            // 
+            // cbxDetectionType
+            // 
+            this.cbxDetectionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxDetectionType.FormattingEnabled = true;
+            this.cbxDetectionType.Location = new System.Drawing.Point(3, 23);
+            this.cbxDetectionType.Name = "cbxDetectionType";
+            this.cbxDetectionType.Size = new System.Drawing.Size(182, 21);
+            this.cbxDetectionType.TabIndex = 3;
+            // 
+            // lblDetectionType
+            // 
+            this.lblDetectionType.AutoSize = true;
+            this.lblDetectionType.Location = new System.Drawing.Point(3, 7);
+            this.lblDetectionType.Name = "lblDetectionType";
+            this.lblDetectionType.Size = new System.Drawing.Size(80, 13);
+            this.lblDetectionType.TabIndex = 2;
+            this.lblDetectionType.Text = "Detection Type";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.cbxMinNeighbors);
+            this.panel4.Controls.Add(this.lblMinNeighbors);
+            this.panel4.Location = new System.Drawing.Point(6, 131);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(188, 50);
+            this.panel4.TabIndex = 4;
+            // 
+            // cbxMinNeighbors
+            // 
+            this.cbxMinNeighbors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMinNeighbors.FormattingEnabled = true;
+            this.cbxMinNeighbors.Location = new System.Drawing.Point(3, 23);
+            this.cbxMinNeighbors.Name = "cbxMinNeighbors";
+            this.cbxMinNeighbors.Size = new System.Drawing.Size(182, 21);
+            this.cbxMinNeighbors.TabIndex = 3;
+            // 
+            // lblMinNeighbors
+            // 
+            this.lblMinNeighbors.AutoSize = true;
+            this.lblMinNeighbors.Location = new System.Drawing.Point(3, 7);
+            this.lblMinNeighbors.Name = "lblMinNeighbors";
+            this.lblMinNeighbors.Size = new System.Drawing.Size(99, 13);
+            this.lblMinNeighbors.TabIndex = 2;
+            this.lblMinNeighbors.Text = "Minimum Neighbors";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.cbxScaleFactor);
@@ -128,6 +255,24 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(188, 50);
             this.panel3.TabIndex = 3;
+            // 
+            // cbxScaleFactor
+            // 
+            this.cbxScaleFactor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxScaleFactor.FormattingEnabled = true;
+            this.cbxScaleFactor.Location = new System.Drawing.Point(3, 23);
+            this.cbxScaleFactor.Name = "cbxScaleFactor";
+            this.cbxScaleFactor.Size = new System.Drawing.Size(182, 21);
+            this.cbxScaleFactor.TabIndex = 3;
+            // 
+            // lblScaleFactor
+            // 
+            this.lblScaleFactor.AutoSize = true;
+            this.lblScaleFactor.Location = new System.Drawing.Point(3, 7);
+            this.lblScaleFactor.Name = "lblScaleFactor";
+            this.lblScaleFactor.Size = new System.Drawing.Size(67, 13);
+            this.lblScaleFactor.TabIndex = 2;
+            this.lblScaleFactor.Text = "Scale Factor";
             // 
             // panel2
             // 
@@ -184,150 +329,6 @@
             this.imgResult.TabIndex = 2;
             this.imgResult.TabStop = false;
             // 
-            // lblScaleFactor
-            // 
-            this.lblScaleFactor.AutoSize = true;
-            this.lblScaleFactor.Location = new System.Drawing.Point(3, 7);
-            this.lblScaleFactor.Name = "lblScaleFactor";
-            this.lblScaleFactor.Size = new System.Drawing.Size(67, 13);
-            this.lblScaleFactor.TabIndex = 2;
-            this.lblScaleFactor.Text = "Scale Factor";
-            // 
-            // cbxScaleFactor
-            // 
-            this.cbxScaleFactor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxScaleFactor.FormattingEnabled = true;
-            this.cbxScaleFactor.Location = new System.Drawing.Point(3, 23);
-            this.cbxScaleFactor.Name = "cbxScaleFactor";
-            this.cbxScaleFactor.Size = new System.Drawing.Size(182, 21);
-            this.cbxScaleFactor.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.cbxMinNeighbors);
-            this.panel4.Controls.Add(this.lblMinNeighbors);
-            this.panel4.Location = new System.Drawing.Point(6, 131);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(188, 50);
-            this.panel4.TabIndex = 4;
-            // 
-            // cbxMinNeighbors
-            // 
-            this.cbxMinNeighbors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxMinNeighbors.FormattingEnabled = true;
-            this.cbxMinNeighbors.Location = new System.Drawing.Point(3, 23);
-            this.cbxMinNeighbors.Name = "cbxMinNeighbors";
-            this.cbxMinNeighbors.Size = new System.Drawing.Size(182, 21);
-            this.cbxMinNeighbors.TabIndex = 3;
-            // 
-            // lblMinNeighbors
-            // 
-            this.lblMinNeighbors.AutoSize = true;
-            this.lblMinNeighbors.Location = new System.Drawing.Point(3, 7);
-            this.lblMinNeighbors.Name = "lblMinNeighbors";
-            this.lblMinNeighbors.Size = new System.Drawing.Size(99, 13);
-            this.lblMinNeighbors.TabIndex = 2;
-            this.lblMinNeighbors.Text = "Minimum Neighbors";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.cbxDetectionType);
-            this.panel5.Controls.Add(this.lblDetectionType);
-            this.panel5.Location = new System.Drawing.Point(6, 187);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(188, 50);
-            this.panel5.TabIndex = 5;
-            // 
-            // cbxDetectionType
-            // 
-            this.cbxDetectionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxDetectionType.FormattingEnabled = true;
-            this.cbxDetectionType.Location = new System.Drawing.Point(3, 23);
-            this.cbxDetectionType.Name = "cbxDetectionType";
-            this.cbxDetectionType.Size = new System.Drawing.Size(182, 21);
-            this.cbxDetectionType.TabIndex = 3;
-            // 
-            // lblDetectionType
-            // 
-            this.lblDetectionType.AutoSize = true;
-            this.lblDetectionType.Location = new System.Drawing.Point(3, 7);
-            this.lblDetectionType.Name = "lblDetectionType";
-            this.lblDetectionType.Size = new System.Drawing.Size(80, 13);
-            this.lblDetectionType.TabIndex = 2;
-            this.lblDetectionType.Text = "Detection Type";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.cbxMinimumSize);
-            this.panel6.Controls.Add(this.lblMinimumSize);
-            this.panel6.Location = new System.Drawing.Point(6, 243);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(188, 50);
-            this.panel6.TabIndex = 6;
-            // 
-            // cbxMinimumSize
-            // 
-            this.cbxMinimumSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxMinimumSize.FormattingEnabled = true;
-            this.cbxMinimumSize.Location = new System.Drawing.Point(3, 23);
-            this.cbxMinimumSize.Name = "cbxMinimumSize";
-            this.cbxMinimumSize.Size = new System.Drawing.Size(182, 21);
-            this.cbxMinimumSize.TabIndex = 3;
-            // 
-            // lblMinimumSize
-            // 
-            this.lblMinimumSize.AutoSize = true;
-            this.lblMinimumSize.Location = new System.Drawing.Point(3, 7);
-            this.lblMinimumSize.Name = "lblMinimumSize";
-            this.lblMinimumSize.Size = new System.Drawing.Size(71, 13);
-            this.lblMinimumSize.TabIndex = 2;
-            this.lblMinimumSize.Text = "Minimum Size";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.cbxMaximumSize);
-            this.panel7.Controls.Add(this.lblMaximumSize);
-            this.panel7.Location = new System.Drawing.Point(6, 299);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(188, 50);
-            this.panel7.TabIndex = 7;
-            // 
-            // cbxMaximumSize
-            // 
-            this.cbxMaximumSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxMaximumSize.FormattingEnabled = true;
-            this.cbxMaximumSize.Location = new System.Drawing.Point(3, 23);
-            this.cbxMaximumSize.Name = "cbxMaximumSize";
-            this.cbxMaximumSize.Size = new System.Drawing.Size(182, 21);
-            this.cbxMaximumSize.TabIndex = 3;
-            // 
-            // lblMaximumSize
-            // 
-            this.lblMaximumSize.AutoSize = true;
-            this.lblMaximumSize.Location = new System.Drawing.Point(3, 7);
-            this.lblMaximumSize.Name = "lblMaximumSize";
-            this.lblMaximumSize.Size = new System.Drawing.Size(74, 13);
-            this.lblMaximumSize.TabIndex = 2;
-            this.lblMaximumSize.Text = "Maximum Size";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.btnDetect);
-            this.panel8.Location = new System.Drawing.Point(6, 426);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(188, 50);
-            this.panel8.TabIndex = 8;
-            // 
-            // btnDetect
-            // 
-            this.btnDetect.Location = new System.Drawing.Point(44, 10);
-            this.btnDetect.Name = "btnDetect";
-            this.btnDetect.Size = new System.Drawing.Size(100, 30);
-            this.btnDetect.TabIndex = 0;
-            this.btnDetect.Text = "Detect";
-            this.btnDetect.UseVisualStyleBackColor = true;
-            this.btnDetect.Click += new System.EventHandler(this.btnDetect_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,11 +337,24 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmguCV Face Detection Demo";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -349,15 +363,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgResult)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

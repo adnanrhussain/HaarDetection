@@ -33,6 +33,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Demo.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>search.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Emgu.CV">
       <HintPath>..\Libraries\Emgu.CV.dll</HintPath>
@@ -87,7 +93,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HaarFaceDetector\HaarDetector.csproj">
+    <ProjectReference Include="..\HaarDetector\HaarDetector.csproj">
       <Project>{06C51B49-0625-4E18-9505-4BA7A0CB5B93}</Project>
       <Name>HaarDetector</Name>
     </ProjectReference>
@@ -96,6 +102,8 @@
     <Content Include="lena.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\search.ico" />
+    <Content Include="search.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
