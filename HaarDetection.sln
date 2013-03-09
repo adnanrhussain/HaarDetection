@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaarDetector", "HaarDetector\HaarDetector.csproj", "{06C51B49-0625-4E18-9505-4BA7A0CB5B93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{45452067-0514-440E-ACDF-E296CCA4CDD8}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\Emgu.CV.dll = Libraries\Emgu.CV.dll
+		Libraries\Emgu.CV.GPU.dll = Libraries\Emgu.CV.GPU.dll
+		Libraries\Emgu.CV.UI.dll = Libraries\Emgu.CV.UI.dll
+		Libraries\Emgu.Util.dll = Libraries\Emgu.Util.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{06C51B49-0625-4E18-9505-4BA7A0CB5B93}.Release|x86.ActiveCfg = Release|Any CPU
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Debug|x86.ActiveCfg = Debug|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Debug|x86.Build.0 = Debug|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Release|Any CPU.ActiveCfg = Release|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Release|x86.ActiveCfg = Release|x86
+		{D9C7DC39-F60F-4053-89A0-1C50140BE9AC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
